@@ -8,9 +8,9 @@ SEMANTIC_SCHOLAR_URL = "https://api.semanticscholar.org/graph/v1"
 OPEN_ALEX_URL = "https://api.openalex.org"
 
 # Keys (Remember to move these to .env for production!)
-SERP_API_KEY = "d271942f5d6062e893a90abc8d91c110bf6bc2e754e84cf1570336e2e627c5f7"
-JINA_API_KEY = "jina_49fff1b8d1b4422b8434d9ab8e55a56baUmUppVtX1WJqq_ls3_hOfXycy2i"
-OPEN_ALEX_API_KEY = "pmB1Y2F0RydgYmgkq8OOXq"
+SERP_API_KEY = os.getenv("SERP_API_KEY")
+JINA_API_KEY = os.getenv("JINA_API_KEY")
+OPEN_ALEX_API_KEY = os.getenv("OPEN_ALEX_API_KEY")
 
 
 mcp = FastMCP("ResearchAgent")
